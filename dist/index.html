@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body class="wrapper"> 
     <header class="header"> 
-      <p>Компонент шапки сайта</p>
+      <div class="container header__row"> 
+        <div class="header__points"> 
+          <div class="circle first"></div>
+          <div class="circle first"></div>
+          <div class="circle first"></div>
+          <div class="circle first"> </div>
+        </div><a class="header__img-a" href="#"> <img class="header__img" src="./assets/imgs/logo.svg" alt="картинка"></a>
+        <div class="header__links"> 
+          <ul class="header__ul"> 
+            <li class="header__li"> <a class="header__a" href="#">For Men</a></li>
+            <li class="header__li"> <a class="header__a" href="#">For Women</a></li>
+            <li class="header__li"> <a class="header__a" href="#">For Kids</a></li>
+            <li class="header__li"> <a class="header__a" href="#">For Anyone</a></li>
+            <li class="header__li"> <a class="header__a" href="#">For No-one</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="main"> 
-      <p>Компоненты страницы</p>
+      <section class="hatters-section">
+        <hr class="hatters-section__hr">
+        <!--+line()-->
+        <div class="container hatters-section__row">
+          <div class="hatters-section__content"> 
+            <div class="hatters-section__description">Introducing</div>
+            <h1 class="hatters-section__title">Mad hatters, <sup>b</sup><span>/</span><sub>c</sub>style matters</h1>
+            <div class="hatters-section__buttons"><a class="hatters-section__button" href="#">Learn more</a>
+              <div class="hatters-section__block"></div>
+            </div>
+          </div>
+          <div class="hatters-section__imgs"> <img class="hatters-section__img1" src="./assets/imgs/img2.jpg" alt="картинка"><img class="hatters-section__img2" src="./assets/imgs/img3.png" alt="картинка">
+            <div class="hatters-section__circle1"> </div>
+            <div class="hatters-section__circle2"></div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <p>Футер страницы</p>

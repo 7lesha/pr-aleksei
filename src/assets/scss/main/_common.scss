@@ -10,9 +10,27 @@ html {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.lines {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    &__block-first {
+        height: 100vw;
+        width: 16vw;
+        border-right: 2px solid rgba(0, 0, 0, 0.07);
+        z-index: -1;
+    }
+    &__block {
+        height: 100vw;
+        width: 17.1vw;
+        border-right: 2px solid rgba(0, 0, 0, 0.07);
+        z-index: -1;
+    } 
 }
 
 .wrapper {
@@ -24,7 +42,6 @@ html {
 
 .main {
     flex: 1 0 auto;
-    padding-top: 47px;
 }
 
 .footer {

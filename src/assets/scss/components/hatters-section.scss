@@ -1,0 +1,112 @@
+@import "../utils/parameters";
+
+.hatters-section {
+    &__hr {
+        margin: 0rem 0 0 0;
+        position: absolute;
+        width: 100vw;
+        opacity: 0.1;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 14rem;
+        padding-bottom: 25rem;
+    }
+
+    &__content {
+        padding: 6.4rem 0 0 0;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $c-text2;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        font-size: 10.2rem;
+        line-height: 1.08;
+        color: $c-text;
+        max-width: 71.5rem;
+        margin-bottom: 4rem;
+
+        sup, sub, span {
+            font-size: 4.352rem;
+            line-height: 40%;
+        }
+    }
+
+    &__buttons {
+        position: relative; 
+        display: inline-block; 
+    }
+
+    &__button {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: $c-text2;
+        background: #FFFFFF;
+        border: 0.1rem solid #CFADAC;
+        box-sizing: border-box;
+        border-radius: 0.6rem;
+        padding: 1.4rem 4.5rem;
+        display: inline-block;
+        background: #FFFFFF;
+    }
+
+    &__block {
+        width: 16rem;
+        height: 3.2rem;
+        box-shadow: 0px 8px 34px rgba(150, 79, 76, 0.32);
+        border-radius: 6px;
+        z-index: -1;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__imgs {
+        position: relative;
+    }
+
+    &__img1 {
+    }
+
+    &__img2 {
+        position: absolute;
+        bottom: -3.7rem;
+        right: -10.7rem;
+        z-index: -1;
+    }
+
+    &__circle1 {
+        position: absolute;
+        bottom: -0.5rem;
+        left: -11.3rem;
+        z-index: -1;
+        width: 24.6rem;
+        height: 24.6rem;
+        border-radius: 50rem;
+        background: rgba(250, 226, 214, 0.4);
+    }
+
+    &__circle2 {
+        position: absolute;
+        bottom: -15.2rem;
+        left: -24rem;
+        z-index: -1;
+        width: 51.8rem;
+        height: 51.8rem;
+        border-radius: 50rem;
+        border: 1px solid rgba(35, 36, 44, 0.1);
+        box-sizing: border-box;
+    }
+}
