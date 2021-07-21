@@ -1,0 +1,85 @@
+@import "../utils/parameters";
+
+.footer {
+    background: #23242C;
+    padding: 13rem 0 13rem 4rem;
+    &__row {
+
+    }
+
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        position: relative;
+        width: 50%;
+        padding-top: 1rem;
+    }
+
+    &__points {
+        position: absolute;
+        top: 1rem;
+        left: -2.3rem;
+    }
+    
+    &__logo {
+    }
+
+    &__logo-img {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        max-width: 30rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.78;
+        color: #FFFFFF;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 0.4rem 0 0 4.4rem;
+    }
+
+    &__block {
+        margin-left: 12.4rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        line-height: 1.33;
+        color: #FAF7F3;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    &__ul {
+
+    }
+
+    &__li {
+        margin-bottom: 1rem;
+    }
+
+    &__a {
+        font-size: 1.6rem;
+        line-height: 2;
+        color: #FFFFFF;
+    }
+
+    &__description {
+        padding-left: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 2;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.third {
+    background-color:  #FAF7F3;
+}

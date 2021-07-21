@@ -1,0 +1,61 @@
+@import "../utils/parameters";
+
+.quote-section {
+
+    &__row {
+        text-align: center;
+        margin-bottom: 32.4rem;
+    }
+
+    &__title {
+        position: relative;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 6.4rem;
+        color: $c-text;
+    }
+
+    &__img1 {
+        position: absolute;
+        top: -3rem;
+        left: 15rem;
+        z-index: -1;
+    }
+
+    &__img2 {
+        position: absolute;
+        bottom: -3rem;
+        right: 14.5rem;
+        z-index: -1;
+    }
+
+    &__circle1 {
+        width: 51.8rem;
+        height: 51.8rem;
+        border-radius: 50rem;
+        background: #FFFFFF;
+        border: 0.1rem solid #EDD5C8;
+        box-sizing: border-box;
+        position: absolute;
+        top: -23rem;
+        left: 0;
+        right: 0;
+        z-index: -3;
+        margin: 0 auto;
+    }
+
+    &__circle2 {
+        width: 34.1rem;
+        height: 34.1rem;
+        border-radius: 50rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 64px #EDD5C8;
+        position: absolute;
+        top: -14rem;
+        left: 0;
+        right: 0;
+        z-index: -3;
+        margin: 0 auto;
+    }
+}

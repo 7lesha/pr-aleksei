@@ -3,20 +3,20 @@
 @import "../utils/mixins";
 
 .header {
-
+    position: relative;
     &__row {
-        padding: 2.5rem 0 2rem 0;
+        padding-top: 6.8rem;
+        padding-bottom: 2rem;
         text-align: center;
         
     }
 
     &__points {
+        top: 2.7rem;
+        left: 0;
+        right: 0;
+        position: absolute;
         margin: 0 auto;
-        width: 1.2rem;
-        height: 1.2rem;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
     }
 
     &__img {
@@ -43,6 +43,13 @@
         color: $c-text;
         margin: 0 3.3rem;
     }
+}
+
+.points {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .circle {

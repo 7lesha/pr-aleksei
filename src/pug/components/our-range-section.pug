@@ -1,0 +1,25 @@
+section.our-range-section
+    +line()
+    .container.our-range-section__row 
+        .our-range-section__description Hat’s that bring the fire
+        .our-range-section__title Our Range
+        .our-range-section__imgs-text
+            mixin imgs(img, title)
+                .our-range-section__block
+                    .our-range-section__imgs-row 
+                        img.our-range-section__img(src=img, alt="картинка")
+                    .our-range-section__text-block
+                        .our-range-section__imgs-title=title 
+                        .our-range-section__imgs-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.
+            +imgs('./assets/imgs/img7.png','The pretender')
+            .our-range-section__margin
+                +imgs('./assets/imgs/img8.png','The influencer')
+            +imgs('./assets/imgs/img9.png','The andy cap')
+            .our-range-section__margin
+                +imgs('./assets/imgs/img10.png','The traveller')
+        .our-range-section__show-more
+            .our-range-section__hr 
+            .our-range-section__text-more 
+                a.our-range-section__text-more-a(href="#") + Show more 
+            .our-range-section__hr
+            .our-range-section__title-more More

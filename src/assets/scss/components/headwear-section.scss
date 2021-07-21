@@ -1,0 +1,41 @@
+@import "../utils/parameters";
+
+.headwear-section {
+    
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22rem;
+    }
+
+    &__img-row {
+        width: 50%;
+        padding-top: 1rem;
+    }
+
+    &__img {
+    }
+
+    &__text {
+        width: 50%;
+        padding-left: 8rem;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $c-text2;
+    }
+
+    &__title {
+        max-width: 46rem;
+        margin-bottom: 4.3rem;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: bold;
+        font-size: 10.2rem;
+        line-height: 1.08;
+        color: $c-text;
+    }
+}

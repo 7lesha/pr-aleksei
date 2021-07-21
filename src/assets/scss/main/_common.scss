@@ -10,7 +10,7 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1210px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -20,16 +20,16 @@ html {
     flex-wrap: nowrap;
     position: absolute;
     &__block-first {
-        height: 100vw;
+        height: 200vw;
         width: 16vw;
         border-right: 2px solid rgba(0, 0, 0, 0.07);
-        z-index: -1;
+        z-index: 1;
     }
     &__block {
-        height: 100vw;
+        height: 200vw;
         width: 17.1vw;
         border-right: 2px solid rgba(0, 0, 0, 0.07);
-        z-index: -1;
+        z-index: 1;
     } 
 }
 
@@ -109,14 +109,14 @@ input[type="text"],
 input[type="email"], 
 input[type="password"], 
 textarea {
-    background: #fff;
-    border: 1px solid #E8E8E8;
+    //background: #fff;
+    //border: 1px solid #E8E8E8;
     display: inline-block;
-    font-family: $body-font;
-    font-size: 14px;
-    padding: 0 15px;
+    //font-family: $body-font;
+    //font-size: 14px;
+    //padding: 0 15px;
     width: 100%;
-    color: $c-text;
+    //color: $c-text;
 }
 input[type="tel"]:focus,
 input[type="text"]:focus, 

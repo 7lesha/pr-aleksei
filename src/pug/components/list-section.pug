@@ -1,0 +1,14 @@
+section.list-section
+    .container.list-section__row
+        mixin list(title)
+            .list-section__blocks
+                .list-section__points.points 
+                    .circle.second
+                    .circle.second
+                    .circle.second
+                    .circle.second
+                .list-section__title=title
+                .list-section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.
+        +list('Brands')
+        +list('Styles')
+        +list('Colors')
