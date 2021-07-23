@@ -15,24 +15,6 @@ html {
     padding: 0 15px;
 }
 
-.lines {
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    &__block-first {
-        height: 200vw;
-        width: 16vw;
-        border-right: 2px solid rgba(0, 0, 0, 0.07);
-        z-index: 1;
-    }
-    &__block {
-        height: 200vw;
-        width: 17.1vw;
-        border-right: 2px solid rgba(0, 0, 0, 0.07);
-        z-index: 1;
-    } 
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -41,6 +23,7 @@ html {
 }
 
 .main {
+    background: url("../imgs/img13.svg");
     flex: 1 0 auto;
 }
 

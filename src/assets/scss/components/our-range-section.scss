@@ -109,5 +109,72 @@
         line-height: 24.3rem;
         color: $c-text;
         opacity: 0.04;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .our-range-section {
+    
+        &__imgs-text {
+            justify-content: center;
+            margin-bottom: 8rem;
+        }
+
+        &__block {
+            margin: 1rem 2rem;
+        }
+
+        &__margin {
+            margin-top: 0rem;
+        }
+
+        &__title {
+            font-size: 9rem;
+        }
+
+        &__title-more {
+            font-size: 17rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .our-range-section {
+        &__img {
+            max-width: 66.53vw;
+        }
+
+        &__title {
+            font-size: 8.4rem;
+        }
+
+        &__hr {
+            width: 24vw;
+        }
+
+        &__title-more {
+            font-size: 16rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .our-range-section {
+        &__text-block {
+            max-width: 66.53vw;
+        }
+
+        &__title {
+            font-size: 7rem;
+        }
+
+        &__hr {
+            width: 0rem;
+        }
+
+        &__title-more {
+            font-size: 12rem;
+        }
     }
 }

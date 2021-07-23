@@ -59,3 +59,50 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: $md) {
+    .quote-section {
+        &__img1 {
+            top: -3rem;
+            left: 0rem;
+            z-index: -1;
+        }
+
+        .quote-section__img2 {
+            position: absolute;
+            bottom: -3rem;
+            right: 0rem;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .quote-section {
+            &__circle1 {
+            max-width: 90vw;
+            max-height: 90vw;
+        }
+        &__circle2 {
+            max-width: 59.2vw;
+            max-height: 59.2vw;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    //.quote-section {
+        // &__circle1 {
+        //     top: -20rem;
+        //     left: 0;
+        //     right: 0;
+        // }
+
+        // &__circle2 {
+        //     top: -13rem;
+        //     left: 0;
+        //     right: 0;
+        // }
+    //}
+}

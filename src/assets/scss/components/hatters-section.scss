@@ -110,3 +110,59 @@
         box-sizing: border-box;
     }
 }
+
+@media screen and (max-width: $md) {
+    .hatters-section {
+    
+        &__content {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+
+        &__title {
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            font-size: 9.6rem;
+        }
+
+        &__imgs {
+            margin: 0 auto;
+        }
+
+        &__description {
+            margin-bottom: 3rem;
+        }
+
+        &__row {
+            padding-top: 10rem;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .hatters-section {
+
+        &__title {
+            font-size: 9rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .hatters-section {
+
+        &__img2 {
+            bottom: -26.7rem;
+            right: 2.3rem;
+        }
+
+        &__title {
+            font-size: 8rem;
+        }
+
+        &__row {
+            margin-bottom: 30rem;
+        }
+    }
+}

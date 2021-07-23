@@ -39,3 +39,48 @@
         color: $c-text;
     }
 }
+
+@media screen and (max-width: $md) {
+    .headwear-section {
+    
+        &__img-row {
+            width: 100%;
+            padding-top: 0rem;
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+
+        &__text {
+            width: 100%;
+            padding-left: 0rem;
+            text-align: center;
+        }
+
+        &__title {
+            margin: 0 auto;
+            max-width: 70rem;
+            margin-bottom: 4rem;
+            font-size: 9rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .headwear-section {
+        &__title {
+            font-size: 8.4rem;
+        }
+
+        &__img {
+            max-width: 77vw;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .headwear-section {
+        &__title {
+            font-size: 6.5rem;
+        }
+    }
+}

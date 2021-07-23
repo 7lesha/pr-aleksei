@@ -14,10 +14,14 @@
         position: relative;
     }
 
-    &__points {
-        position: absolute;
+    &__blocks::before {
+        content: '';
+        width: 0.9rem;
+        height: 0.9rem;
+        background: url("../imgs/img4.svg");
         top: 2rem;
         left: 0;
+        position: absolute;
     }
 
     &__title {
@@ -39,8 +43,36 @@
     }
 }
 
+@media screen and (max-width: $md) {
+    .list-section {
+        
+        &__row {
+        justify-content: center;
+        }
 
+        &__blocks {
+            margin: 1rem 2rem;
+        }
+    }
+}
 
-.second {
-    background-color: #964F4C;
+@media screen and (max-width: $sm) {
+    .list-section {
+
+        &__blocks {
+            text-align: center;
+        }
+
+        &__title {
+            padding-left: 0rem;
+        }
+
+        &__description {
+            margin-left: 0rem;
+        }
+
+        &__blocks::before {
+            left: 4rem;
+        }
+    }
 }
