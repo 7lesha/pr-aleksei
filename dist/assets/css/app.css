@@ -272,6 +272,14 @@ button {
     color: #23242C;
     margin: 0 3.3rem; }
 
+@keyframes bt {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .hatters-section {
   border-top: 2px solid #EDEDED; }
   .hatters-section__row {
@@ -325,7 +333,10 @@ button {
     margin: 0 auto;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    display: inline-block; }
+  .hatters-section__block {
+    animation: bt 2s infinite linear; }
   .hatters-section__imgs {
     position: relative; }
   .hatters-section__img2 {
@@ -789,6 +800,8 @@ button {
     font-size: 1.6rem;
     line-height: 2;
     color: #FFFFFF; }
+  .footer__a:hover {
+    color: #967675; }
   .footer__description {
     padding-left: 0.5rem;
     font-size: 1.6rem;
