@@ -2,7 +2,6 @@
 
 .newsletter-section {
     background-color: $c-secondary;
-    z-index: -3;
     &__row {
         text-align: center;
         padding: 7rem 1.5rem 7.3rem 1.5rem;
@@ -54,6 +53,11 @@
         padding: 2rem 6rem 0px 6.5rem;
         display: inline-block;
         background: #FFFFFF;
+        transition: transform 1s linear;
+    }
+
+    &__a:hover {
+        transform: scaleY(-1);
     }
 }
 
@@ -68,7 +72,7 @@
 @media screen and (max-width: $sm) {
     .newsletter-section {
         &__title {
-        font-size: 8.4rem;
+        font-size: 7rem;
         }
 
         &__input {
@@ -78,13 +82,18 @@
         &__a {
             padding: 2rem 6rem 2rem 6.5rem;
         }
+
+        &__description {
+            margin-bottom: 2rem;
+        }
     }
 }
 
 @media screen and (max-width: $xs) {
     .newsletter-section {
         &__title {
-        font-size: 6rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
         }
     }
 }

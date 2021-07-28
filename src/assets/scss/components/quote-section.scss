@@ -87,22 +87,34 @@
             max-width: 59.2vw;
             max-height: 59.2vw;
         }
+
+        &__title {
+            font-size: 4.5rem;
+        }
     }
 }
 
 @media screen and (max-width: $xs) {
+    .quote-section {
 
-    //.quote-section {
-        // &__circle1 {
-        //     top: -20rem;
-        //     left: 0;
-        //     right: 0;
-        // }
+        &__title {
+            font-size: 3rem;
+        }
 
-        // &__circle2 {
-        //     top: -13rem;
-        //     left: 0;
-        //     right: 0;
-        // }
-    //}
+        &__row {
+            margin-bottom: 10rem;
+        }
+
+        &__circle1 {
+            top: -14rem;
+            max-width: 60vw;
+            max-height: 60vw;
+        }
+
+        &__circle2 {
+            top: -5rem;
+            max-width: 30vw;
+            max-height: 30vw;
+        }
+    }
 }

@@ -76,3 +76,16 @@
         }
     }
 }
+
+@media screen and (max-width: $xs) {
+    .list-section {
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__row {
+            margin-bottom: 10rem;
+        }
+    }
+}

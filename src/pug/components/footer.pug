@@ -3,7 +3,8 @@ footer.footer
         div.footer__blocks
             div.footer__img
                 a.footer__logo(href="#") 
-                    img.footer__logo-img(src="./assets/imgs/img15.svg", alt="картинка")
+                    svg.icon.logo2
+                        use(xlink:href="./assets/imgs/sprite.svg#logo")
                 div.footer__text Be better, be cooler, be a Mad Hatter and sustainably matter.
             div.footer__links
                 mixin links(title, a1, a2, a3, a4, a5)

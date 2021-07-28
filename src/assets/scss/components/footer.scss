@@ -41,10 +41,6 @@
         position: relative;
     }
 
-    &__logo-img {
-        margin-bottom: 3rem;
-    }
-
     &__text {
         max-width: 30rem;
         font-weight: 600;
@@ -98,6 +94,17 @@
     }
 }
 
+.logo2 {
+    fill: #fff;
+    width: 24.6rem;
+    height: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.logo2:hover {
+    fill: $c-text2;
+}
+
 @media screen and (max-width: $md) {
     .footer {
         padding: 13rem 0 9rem 0rem;
@@ -143,5 +150,11 @@
             margin-bottom: 5rem;
             max-width: 55rem;
         }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .footer {
+        padding: 10rem 0 5rem 0rem;
     }
 }

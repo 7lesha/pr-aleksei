@@ -14,6 +14,7 @@
     }
 
     &__img {
+        max-width: 100%;
     }
 
     &__text {
@@ -60,7 +61,7 @@
             margin: 0 auto;
             max-width: 70rem;
             margin-bottom: 4rem;
-            font-size: 9rem;
+            font-size: 8rem;
         }
     }
 }
@@ -68,7 +69,7 @@
 @media screen and (max-width: $sm) {
     .headwear-section {
         &__title {
-            font-size: 8.4rem;
+            font-size: 6rem;
         }
 
         &__img {
@@ -80,7 +81,11 @@
 @media screen and (max-width: $xs) {
     .headwear-section {
         &__title {
-            font-size: 6.5rem;
+            font-size: 3rem;
+        }
+
+        &__row {
+            margin-bottom: 10rem;
         }
     }
 }

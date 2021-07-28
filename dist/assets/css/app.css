@@ -247,7 +247,7 @@ button {
 .header {
   position: relative; }
   .header__row {
-    padding-top: 6.8rem;
+    padding-top: 6.7rem;
     padding-bottom: 2rem;
     text-align: center; }
   .header__row::before {
@@ -260,8 +260,6 @@ button {
     right: 0;
     position: absolute;
     margin: 0 auto; }
-  .header__img {
-    margin-bottom: 2.6rem; }
   .header__ul {
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +269,17 @@ button {
     line-height: 2;
     color: #23242C;
     margin: 0 3.3rem; }
+
+.logo {
+  height: 3rem;
+  margin-bottom: 2.3rem; }
+
+.logo:hover {
+  fill: #967675; }
+
+@media screen and (max-width: 576px) {
+  .logo {
+    max-width: 60vw; } }
 
 @keyframes bt {
   from {
@@ -322,7 +331,10 @@ button {
     border-radius: 0.6rem;
     padding: 1.7rem 4.8rem;
     display: inline-block;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    transition: transform 1s linear; }
+  .hatters-section__button:hover {
+    transform: scale(1.1, 1.1); }
   .hatters-section__block {
     width: 16rem;
     height: 3.2rem;
@@ -339,7 +351,10 @@ button {
     animation: bt 2s infinite linear; }
   .hatters-section__imgs {
     position: relative; }
+  .hatters-section__img1 {
+    max-width: 25.6rem; }
   .hatters-section__img2 {
+    max-width: 22.1rem;
     position: absolute;
     bottom: -3.7rem;
     right: -10.7rem;
@@ -382,15 +397,16 @@ button {
 
 @media screen and (max-width: 1200px) {
   .hatters-section__title {
-    font-size: 9rem; } }
+    font-size: 7rem; } }
 
 @media screen and (max-width: 576px) {
   .hatters-section__img2 {
     bottom: -26.7rem;
     right: 2.3rem; }
   .hatters-section__title {
-    font-size: 8rem; }
+    font-size: 5rem; }
   .hatters-section__row {
+    padding-top: 3rem;
     margin-bottom: 30rem; } }
 
 .list-section__row {
@@ -444,6 +460,12 @@ button {
   .list-section__blocks::before {
     left: 4rem; } }
 
+@media screen and (max-width: 576px) {
+  .list-section__title {
+    font-size: 3rem; }
+  .list-section__row {
+    margin-bottom: 10rem; } }
+
 .headwear-section__row {
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +474,9 @@ button {
 .headwear-section__img-row {
   width: 50%;
   padding-top: 1rem; }
+
+.headwear-section__img {
+  max-width: 100%; }
 
 .headwear-section__text {
   width: 50%;
@@ -487,17 +512,19 @@ button {
     margin: 0 auto;
     max-width: 70rem;
     margin-bottom: 4rem;
-    font-size: 9rem; } }
+    font-size: 8rem; } }
 
 @media screen and (max-width: 768px) {
   .headwear-section__title {
-    font-size: 8.4rem; }
+    font-size: 6rem; }
   .headwear-section__img {
     max-width: 77vw; } }
 
 @media screen and (max-width: 576px) {
   .headwear-section__title {
-    font-size: 6.5rem; } }
+    font-size: 3rem; }
+  .headwear-section__row {
+    margin-bottom: 10rem; } }
 
 .our-range-section__row {
   margin-bottom: 42rem; }
@@ -524,6 +551,9 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 3.5rem; }
+
+.our-range-section__img {
+  max-width: 51.1rem; }
 
 .our-range-section__text-block {
   background: #F6ECE8;
@@ -599,21 +629,30 @@ button {
   .our-range-section__img {
     max-width: 66.53vw; }
   .our-range-section__title {
-    font-size: 8.4rem; }
+    font-size: 7rem; }
   .our-range-section__hr {
     width: 24vw; }
   .our-range-section__title-more {
-    font-size: 16rem; } }
+    font-size: 16rem; }
+  .our-range-section__row {
+    margin-bottom: 40rem; } }
 
 @media screen and (max-width: 576px) {
   .our-range-section__text-block {
     max-width: 66.53vw; }
   .our-range-section__title {
-    font-size: 7rem; }
+    font-size: 4rem;
+    margin-bottom: 4rem; }
   .our-range-section__hr {
     width: 0rem; }
   .our-range-section__title-more {
-    font-size: 12rem; } }
+    font-size: 10rem; }
+  .our-range-section__imgs-title {
+    font-size: 3rem; }
+  .our-range-section__row {
+    margin-bottom: 25rem; }
+  .our-range-section__text-more-a {
+    font-size: 3rem; } }
 
 .quote-section__row {
   text-align: center;
@@ -683,11 +722,26 @@ button {
     max-height: 90vw; }
   .quote-section__circle2 {
     max-width: 59.2vw;
-    max-height: 59.2vw; } }
+    max-height: 59.2vw; }
+  .quote-section__title {
+    font-size: 4.5rem; } }
+
+@media screen and (max-width: 576px) {
+  .quote-section__title {
+    font-size: 3rem; }
+  .quote-section__row {
+    margin-bottom: 10rem; }
+  .quote-section__circle1 {
+    top: -14rem;
+    max-width: 60vw;
+    max-height: 60vw; }
+  .quote-section__circle2 {
+    top: -5rem;
+    max-width: 30vw;
+    max-height: 30vw; } }
 
 .newsletter-section {
-  background-color: #F9F2EF;
-  z-index: -3; }
+  background-color: #F9F2EF; }
   .newsletter-section__row {
     text-align: center;
     padding: 7rem 1.5rem 7.3rem 1.5rem; }
@@ -728,7 +782,10 @@ button {
     border-radius: 0.6rem;
     padding: 2rem 6rem 0px 6.5rem;
     display: inline-block;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    transition: transform 1s linear; }
+  .newsletter-section__a:hover {
+    transform: scaleY(-1); }
 
 @media screen and (max-width: 1200px) {
   .newsletter-section__title {
@@ -736,15 +793,18 @@ button {
 
 @media screen and (max-width: 768px) {
   .newsletter-section__title {
-    font-size: 8.4rem; }
+    font-size: 7rem; }
   .newsletter-section__input {
     margin-bottom: 3rem; }
   .newsletter-section__a {
-    padding: 2rem 6rem 2rem 6.5rem; } }
+    padding: 2rem 6rem 2rem 6.5rem; }
+  .newsletter-section__description {
+    margin-bottom: 2rem; } }
 
 @media screen and (max-width: 576px) {
   .newsletter-section__title {
-    font-size: 6rem; } }
+    font-size: 4rem;
+    margin-bottom: 2rem; } }
 
 .footer {
   background: #23242C;
@@ -773,8 +833,6 @@ button {
     position: absolute; }
   .footer__logo {
     position: relative; }
-  .footer__logo-img {
-    margin-bottom: 3rem; }
   .footer__text {
     max-width: 30rem;
     font-weight: 600;
@@ -808,6 +866,15 @@ button {
     line-height: 2;
     color: rgba(255, 255, 255, 0.5); }
 
+.logo2 {
+  fill: #fff;
+  width: 24.6rem;
+  height: 2.4rem;
+  margin-bottom: 3rem; }
+
+.logo2:hover {
+  fill: #967675; }
+
 @media screen and (max-width: 1200px) {
   .footer {
     padding: 13rem 0 9rem 0rem; }
@@ -839,3 +906,7 @@ button {
       margin: 0 auto;
       margin-bottom: 5rem;
       max-width: 55rem; } }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 10rem 0 5rem 0rem; } }

@@ -64,6 +64,11 @@
         padding: 1.7rem 4.8rem;
         display: inline-block;
         background: #FFFFFF;
+        transition: transform 1s linear;
+    }
+
+    &__button:hover {
+        transform: scale(1.1, 1.1);
     }
 
     &__block {
@@ -89,9 +94,11 @@
     }
 
     &__img1 {
+        max-width: 25.6rem;
     }
 
     &__img2 {
+        max-width: 22.1rem;
         position: absolute;
         bottom: -3.7rem;
         right: -10.7rem;
@@ -155,7 +162,7 @@
     .hatters-section {
 
         &__title {
-            font-size: 9rem;
+            font-size: 7rem;
         }
     }
 }
@@ -169,10 +176,11 @@
         }
 
         &__title {
-            font-size: 8rem;
+            font-size: 5rem;
         }
 
         &__row {
+            padding-top: 3rem;
             margin-bottom: 30rem;
         }
     }

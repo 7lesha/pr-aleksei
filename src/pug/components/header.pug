@@ -1,7 +1,8 @@
 header.header 
     div.container.header__row   
         a.header__img-a(href="#") 
-            img.header__img(src="./assets/imgs/logo.svg", alt="картинка")
+            svg.icon.logo
+                use(xlink:href="./assets/imgs/sprite.svg#logo")
         nav.header__links 
             ul.header__ul 
                 li.header__li 

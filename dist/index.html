@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>Mad Hatters</title>
+    <link rel="stylesheet" href="./assets/css/app.css"><link rel="shortcut icon" href="favicon.ico"/>
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--<meta name="msapplication-TileColor" content="#da532c">-->
+    <!--<meta name="theme-color" content="#ffffff">-->
   </head>
   <body class="wrapper"> 
     <header class="header"> 
-      <div class="container header__row">  <a class="header__img-a" href="#"> <img class="header__img" src="./assets/imgs/logo.svg" alt="картинка"></a>
+      <div class="container header__row">  <a class="header__img-a" href="#"> 
+          <svg class="icon logo">
+            <use xlink:href="./assets/imgs/sprite.svg#logo"></use>
+          </svg></a>
         <nav class="header__links"> 
           <ul class="header__ul"> 
             <li class="header__li"> <a class="header__a" href="#">For Men</a></li>
@@ -26,7 +36,7 @@
         <div class="container hatters-section__row">
           <div class="hatters-section__content"> 
             <div class="hatters-section__description">Introducing</div>
-            <h1 class="hatters-section__title">Mad hatters, <sup>b</sup><span>/</span><sub>c</sub>style matters</h1>
+            <h1 class="hatters-section__title">Mad hatters, <sup>b</sup><span>/</span><sub>c&nbsp;</sub>style matters</h1>
                         <div class="hatters-section__buttons"><a class="hatters-section__button" href="#">Learn more</a>
                           <div class="hatters-section__block"></div>
                         </div>
@@ -58,7 +68,7 @@
           <div class="headwear-section__img-row"> <img class="headwear-section__img" src="./assets/imgs/img6.jpg" alt="картинка"></div>
           <div class="headwear-section__text"> 
             <div class="headwear-section__description">Become sexy</div>
-            <div class="headwear-section__title">Mad love for f&thinsp;ire headwear</div>
+            <div class="headwear-section__title">Mad love for f&#8239;ire headwear</div>
                         <div class="hatters-section__buttons"><a class="hatters-section__button" href="#">Learn more</a>
                           <div class="hatters-section__block"></div>
                         </div>
@@ -70,32 +80,28 @@
           <div class="our-range-section__description">Hat’s that bring the fire</div>
           <div class="our-range-section__title">Our Range</div>
           <div class="our-range-section__imgs-text">
-                        <div class="our-range-section__block">
-                          <div class="our-range-section__imgs-row"> <img class="our-range-section__img" src="./assets/imgs/img7.png" alt="картинка"></div>
+                        <div class="our-range-section__block"> <img class="our-range-section__img" src="./assets/imgs/img7.png" alt="картинка">
                           <div class="our-range-section__text-block">
                             <div class="our-range-section__imgs-title">The pretender</div>
                             <div class="our-range-section__imgs-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.</div>
                           </div>
                         </div>
             <div class="our-range-section__margin">
-                          <div class="our-range-section__block">
-                            <div class="our-range-section__imgs-row"> <img class="our-range-section__img" src="./assets/imgs/img8.png" alt="картинка"></div>
+                          <div class="our-range-section__block"> <img class="our-range-section__img" src="./assets/imgs/img8.png" alt="картинка">
                             <div class="our-range-section__text-block">
                               <div class="our-range-section__imgs-title">The influencer</div>
                               <div class="our-range-section__imgs-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.</div>
                             </div>
                           </div>
             </div>
-                        <div class="our-range-section__block">
-                          <div class="our-range-section__imgs-row"> <img class="our-range-section__img" src="./assets/imgs/img9.png" alt="картинка"></div>
+                        <div class="our-range-section__block"> <img class="our-range-section__img" src="./assets/imgs/img9.png" alt="картинка">
                           <div class="our-range-section__text-block">
                             <div class="our-range-section__imgs-title">The andy cap</div>
                             <div class="our-range-section__imgs-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.</div>
                           </div>
                         </div>
             <div class="our-range-section__margin">
-                          <div class="our-range-section__block">
-                            <div class="our-range-section__imgs-row"> <img class="our-range-section__img" src="./assets/imgs/img10.png" alt="картинка"></div>
+                          <div class="our-range-section__block"> <img class="our-range-section__img" src="./assets/imgs/img10.png" alt="картинка">
                             <div class="our-range-section__text-block">
                               <div class="our-range-section__imgs-title">The traveller</div>
                               <div class="our-range-section__imgs-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum.</div>
@@ -132,7 +138,10 @@
     <footer class="footer">
       <div class="container footer__row"> 
         <div class="footer__blocks">
-          <div class="footer__img"><a class="footer__logo" href="#"> <img class="footer__logo-img" src="./assets/imgs/img15.svg" alt="картинка"></a>
+          <div class="footer__img"><a class="footer__logo" href="#"> 
+              <svg class="icon logo2">
+                <use xlink:href="./assets/imgs/sprite.svg#logo"></use>
+              </svg></a>
             <div class="footer__text">Be better, be cooler, be a Mad Hatter and sustainably matter.</div>
           </div>
           <div class="footer__links">
