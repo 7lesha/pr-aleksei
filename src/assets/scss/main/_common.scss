@@ -37,9 +37,7 @@ a {
     &:hover,
     &:active,
     &:focus {
-        color: $c-primary;
-        outline: none;
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 
@@ -106,7 +104,8 @@ input[type="text"]:focus,
 input[type="email"]:focus, 
 input[type="password"]:focus, 
 textarea:focus {
-    border-color: $c-primary;
+    border-color: black;
+    color: black;
 }
 
 textarea {
@@ -124,7 +123,6 @@ input[type="password"]:focus::placeholder,
 textarea:focus::placeholder {
     opacity: 0;
 }
-
 
 /* SELECT */
 select {

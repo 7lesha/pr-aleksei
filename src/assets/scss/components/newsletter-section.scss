@@ -53,11 +53,13 @@
         padding: 2rem 6rem 0px 6.5rem;
         display: inline-block;
         background: #FFFFFF;
-        transition: transform 1s linear;
+        transition: 1s linear;
     }
 
     &__a:hover {
-        transform: scaleY(-1);
+        background: #CFADAC;
+        color: #FFFFFF;
+        text-decoration: none;
     }
 }
 

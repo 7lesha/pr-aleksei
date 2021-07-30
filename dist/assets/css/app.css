@@ -151,9 +151,7 @@ a {
   color: #23242C;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #F6ECE8;
-    outline: none;
-    text-decoration: none; }
+    text-decoration: underline; }
 
 img {
   vertical-align: bottom; }
@@ -203,7 +201,8 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border-color: #F6ECE8; }
+  border-color: black;
+  color: black; }
 
 textarea {
   resize: vertical;
@@ -272,7 +271,8 @@ button {
 
 .logo {
   height: 3rem;
-  margin-bottom: 2.3rem; }
+  margin-bottom: 2.3rem;
+  transition: 1s ease; }
 
 .logo:hover {
   fill: #967675; }
@@ -334,7 +334,8 @@ button {
     background: #FFFFFF;
     transition: transform 1s linear; }
   .hatters-section__button:hover {
-    transform: scale(1.1, 1.1); }
+    transform: scale(1.1, 1.1);
+    text-decoration: none; }
   .hatters-section__block {
     width: 16rem;
     height: 3.2rem;
@@ -553,7 +554,11 @@ button {
   margin-bottom: 3.5rem; }
 
 .our-range-section__img {
-  max-width: 51.1rem; }
+  max-width: 51.1rem;
+  transition: 1s ease; }
+
+.our-range-section__img:hover {
+  transform: scale(1.1, 1.1); }
 
 .our-range-section__text-block {
   background: #F6ECE8;
@@ -654,6 +659,14 @@ button {
   .our-range-section__text-more-a {
     font-size: 3rem; } }
 
+@keyframes circl {
+  from {
+    box-shadow: 0px 0px 64px #edd5c8; }
+  50% {
+    box-shadow: 0px 0px 64px rgba(237, 213, 200, 0); }
+  to {
+    box-shadow: 0px 0px 64px #edd5c8; } }
+
 .quote-section__row {
   text-align: center;
   margin-bottom: 32.4rem; }
@@ -696,6 +709,7 @@ button {
   width: 34.1rem;
   height: 34.1rem;
   border-radius: 50rem;
+  border: 0.1rem solid #EDD5C8;
   background: #FFFFFF;
   box-shadow: 0px 0px 64px #EDD5C8;
   position: absolute;
@@ -703,7 +717,8 @@ button {
   left: 0;
   right: 0;
   z-index: -3;
-  margin: 0 auto; }
+  margin: 0 auto;
+  animation: circl 2s infinite ease; }
 
 @media screen and (max-width: 1200px) {
   .quote-section__img1 {
@@ -783,9 +798,11 @@ button {
     padding: 2rem 6rem 0px 6.5rem;
     display: inline-block;
     background: #FFFFFF;
-    transition: transform 1s linear; }
+    transition: 1s linear; }
   .newsletter-section__a:hover {
-    transform: scaleY(-1); }
+    background: #CFADAC;
+    color: #FFFFFF;
+    text-decoration: none; }
 
 @media screen and (max-width: 1200px) {
   .newsletter-section__title {
@@ -857,7 +874,8 @@ button {
   .footer__a {
     font-size: 1.6rem;
     line-height: 2;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    transition: 1s ease; }
   .footer__a:hover {
     color: #967675; }
   .footer__description {
@@ -870,7 +888,8 @@ button {
   fill: #fff;
   width: 24.6rem;
   height: 2.4rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  transition: 1s ease; }
 
 .logo2:hover {
   fill: #967675; }

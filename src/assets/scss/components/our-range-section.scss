@@ -38,6 +38,11 @@
 
     &__img {
         max-width: 51.1rem;
+        transition: 1s ease;
+    }
+
+    &__img:hover {
+        transform: scale(1.1, 1.1);
     }
 
     &__text-block {

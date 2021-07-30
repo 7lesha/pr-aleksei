@@ -1,5 +1,11 @@
 @import "../utils/parameters";
 
+@keyframes circl {
+    from {box-shadow: 0px 0px 64px rgba(237,213,200, 1);}
+    50% {box-shadow: 0px 0px 64px rgba(237,213,200, 0);}
+    to {box-shadow: 0px 0px 64px rgba(237,213,200, 1);}
+}
+
 .quote-section {
 
     &__row {
@@ -49,6 +55,7 @@
         width: 34.1rem;
         height: 34.1rem;
         border-radius: 50rem;
+        border: 0.1rem solid #EDD5C8;
         background: #FFFFFF;
         box-shadow: 0px 0px 64px #EDD5C8;
         position: absolute;
@@ -57,6 +64,7 @@
         right: 0;
         z-index: -3;
         margin: 0 auto;
+        animation: circl 2s infinite ease;
     }
 }
 
